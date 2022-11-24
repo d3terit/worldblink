@@ -1,0 +1,1194 @@
+Unity Editor version:    2021.3.11f1 (0a5ca18544bf)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+Kernel version:          5.15.0-52-generic
+Architecture:            x86_64
+Available memory:        7846 MB
+Using pre-set license
+Pro License: YES
+
+(Unity:4570): Gdk-CRITICAL **: 14:10:16.117: gdk_window_get_cursor: assertion 'GDK_IS_WINDOW (window)' failed
+Desktop is 1366 x 768 @ 60 Hz
+Initialize udev device monitor.
+
+COMMAND LINE ARGUMENTS:
+Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/home/d3ter/investigacion/world_shield/textToAnim
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+39519
+Successfully changed project path to: /home/d3ter/investigacion/world_shield/textToAnim
+/home/d3ter/investigacion/world_shield/textToAnim
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 213,87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path /home/d3ter/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /home/d3ter/investigacion/world_shield/textToAnim/Assets
+GLX Extensions: GLX_ARB_create_context GLX_ARB_create_context_no_error GLX_ARB_create_context_profile GLX_ARB_create_context_robustness GLX_ARB_fbconfig_float GLX_ARB_framebuffer_sRGB GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_buffer_age GLX_EXT_create_context_es2_profile GLX_EXT_create_context_es_profile GLX_EXT_fbconfig_packed_float GLX_EXT_framebuffer_sRGB GLX_EXT_no_config_context GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_visual_info GLX_EXT_visual_rating GLX_INTEL_swap_event GLX_MESA_copy_sub_buffer GLX_MESA_query_renderer GLX_MESA_swap_control GLX_OML_swap_method GLX_OML_sync_control GLX_SGIS_multisample GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGIX_visual_select_group GLX_SGI_make_current_read GLX_SGI_swap_control GLX_SGI_video_sync 
+Renderer: Mesa Intel(R) HD Graphics 2500 (IVB GT1)
+Vendor:   Intel
+Version:  4.2 (Core Profile) Mesa 22.0.5
+GLES:     0
+ GL_3DFX_texture_compression_FXT1 GL_AMD_conservative_depth GL_AMD_draw_buffers_blend GL_AMD_multi_draw_indirect GL_AMD_pinned_memory GL_AMD_seamless_cubemap_per_texture GL_AMD_shader_trinary_minmax GL_AMD_texture_texture4 GL_AMD_vertex_shader_layer GL_AMD_vertex_shader_viewport_index GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_compressed_texture_pixel_storage GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_draw_indirect GL_ARB_draw_instanced G
+L_ARB_enhanced_layouts GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_shader GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objec
+ts GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_spirv_extensions GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL
+_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_s
+tencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba G
+L_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
+OPENGL LOG: Creating OpenGL 4.2 graphics device ; Context level  <OpenGL 4.2> ; Context handle 2135897536
+Initialize mono
+Mono path[0] = '/home/d3ter/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = '/home/d3ter/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
+Mono config path = '/home/d3ter/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56570
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/d3ter/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /home/d3ter/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0,016762 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 239,31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1,804 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1805ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1337ms)
+			LoadAssemblies (134ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (308ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (110ms)
+			SetupLoadedEditorAssemblies (767ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (239ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (360ms)
+				ProcessInitializeOnLoadMethodAttributes (132ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0,010168 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1,10 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2,997 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2999ms)
+		BeginReloadAssembly (226ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (2438ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (728ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (185ms)
+			SetupLoadedEditorAssemblies (1197ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (38ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (229ms)
+				ProcessInitializeOnLoadAttributes (819ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1,06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3564 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (155,7 KB). Loaded Objects now: 4039.
+Memory consumption went from 137,9 MB to 137,7 MB.
+Total: 8,150982 ms (FindLiveObjects: 0,467295 ms CreateObjectMapping: 0,338483 ms MarkObjects: 6,833796 ms  DeleteObjects: 0,508876 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1447,846743 seconds.
+  path: Assets/myAssets/player/Paladin WProp J Nordstrom.fbx
+  artifactKey: Guid(8c2b59e6850a1fe06985f467c6dfb31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/Paladin WProp J Nordstrom.fbx using Guid(8c2b59e6850a1fe06985f467c6dfb31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8f9d4918e15cf8dcd9e4eacc7ef6db') in 0,612630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33,628437 seconds.
+  path: Assets/myAssets/player/scripts/playerController.cs
+  artifactKey: Guid(ad4c9aac7107cb84ab874cf6e58c2a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/scripts/playerController.cs using Guid(ad4c9aac7107cb84ab874cf6e58c2a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '723eeb71d5ff565c11c23b46e3a93403') in 0,001556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 408,479663 seconds.
+  path: Assets/myAssets/player/scripts/platerState.cs
+  artifactKey: Guid(188c612fcca50c802831d7ec0efd0f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/scripts/platerState.cs using Guid(188c612fcca50c802831d7ec0efd0f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f5508f1835745411af6db91cb5697e1') in 0,002964 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,009906 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1,14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2,648 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2649ms)
+		BeginReloadAssembly (281ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (120ms)
+		EndReloadAssembly (2045ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (3ms)
+			SetupTypeCache (677ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (111ms)
+			SetupLoadedEditorAssemblies (975ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (47ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (687ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3,75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3555 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (138,8 KB). Loaded Objects now: 4066.
+Memory consumption went from 139,7 MB to 139,5 MB.
+Total: 10,392318 ms (FindLiveObjects: 0,452870 ms CreateObjectMapping: 0,270044 ms MarkObjects: 7,229104 ms  DeleteObjects: 2,437418 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 106,512949 seconds.
+  path: Assets/myAssets/player/scripts/platerState.cs
+  artifactKey: Guid(188c612fcca50c802831d7ec0efd0f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/scripts/platerState.cs using Guid(188c612fcca50c802831d7ec0efd0f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c675048731f40e9cfd06a356c5d60bf4') in 0,023178 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,009287 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1,08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2,489 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2490ms)
+		BeginReloadAssembly (255ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (1987ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (628ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (157ms)
+			SetupLoadedEditorAssemblies (939ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (151ms)
+				ProcessInitializeOnLoadAttributes (652ms)
+				ProcessInitializeOnLoadMethodAttributes (72ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3,77 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3555 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (138,7 KB). Loaded Objects now: 4081.
+Memory consumption went from 139,7 MB to 139,6 MB.
+Total: 11,481560 ms (FindLiveObjects: 0,427337 ms CreateObjectMapping: 0,341267 ms MarkObjects: 7,952590 ms  DeleteObjects: 2,756891 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1158,285615 seconds.
+  path: Assets/myAssets/player/scripts/platerState.cs
+  artifactKey: Guid(188c612fcca50c802831d7ec0efd0f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/scripts/platerState.cs using Guid(188c612fcca50c802831d7ec0efd0f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c41846e0214320ea3b638b942224345') in 0,011476 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,011477 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2,03 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3,034 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3036ms)
+		BeginReloadAssembly (253ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (82ms)
+		EndReloadAssembly (2522ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (723ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (176ms)
+			SetupLoadedEditorAssemblies (1238ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (80ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (240ms)
+				ProcessInitializeOnLoadAttributes (807ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3,91 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3555 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (138,8 KB). Loaded Objects now: 4096.
+Memory consumption went from 139,7 MB to 139,6 MB.
+Total: 16,265303 ms (FindLiveObjects: 0,623542 ms CreateObjectMapping: 0,519582 ms MarkObjects: 10,998397 ms  DeleteObjects: 4,120638 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,009418 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/d3ter/investigacion/world_shield/textToAnim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1,08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3,011 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3013ms)
+		BeginReloadAssembly (256ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (92ms)
+		EndReloadAssembly (2490ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (764ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (168ms)
+			SetupLoadedEditorAssemblies (1218ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (60ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (209ms)
+				ProcessInitializeOnLoadAttributes (824ms)
+				ProcessInitializeOnLoadMethodAttributes (103ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3,72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3555 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (138,8 KB). Loaded Objects now: 4111.
+Memory consumption went from 139,7 MB to 139,6 MB.
+Total: 17,465137 ms (FindLiveObjects: 0,431388 ms CreateObjectMapping: 0,265429 ms MarkObjects: 12,636135 ms  DeleteObjects: 4,129458 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 282,539957 seconds.
+  path: Assets/myAssets/player/animaciones/runBack.anim
+  artifactKey: Guid(429f85df0cde81447a8a0b5e190d968f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/runBack.anim using Guid(429f85df0cde81447a8a0b5e190d968f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4897d496fafe2a8eb1e93d4e6e49f107') in 0,351573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,776692 seconds.
+  path: Assets/myAssets/player/animaciones/walkRight.anim
+  artifactKey: Guid(52343066e97625747867db9dba8dfd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/walkRight.anim using Guid(52343066e97625747867db9dba8dfd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce4e5e8dce27998e48349594009f954') in 0,060581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12,943677 seconds.
+  path: Assets/myAssets/player/animaciones/runRight.anim
+  artifactKey: Guid(d44bd2a0c5f4f914eb7f9e419df5d341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/runRight.anim using Guid(d44bd2a0c5f4f914eb7f9e419df5d341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab59759007ea01dbd0c557ea8beaf25') in 0,067638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10,236713 seconds.
+  path: Assets/myAssets/player/animations/idle1.anim
+  artifactKey: Guid(e0e6199c936a288dfb42494468a4e7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/idle1.anim using Guid(e0e6199c936a288dfb42494468a4e7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7bd610b78242ee23d5e84ffda7d88b4') in 0,023949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3,788457 seconds.
+  path: Assets/myAssets/player/animaciones/walkBack.anim
+  artifactKey: Guid(eb5106e143f45e942ae78328821b8431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/walkBack.anim using Guid(eb5106e143f45e942ae78328821b8431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bef7e017b7392dbb719d2844831674d') in 0,071807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,378341 seconds.
+  path: Assets/myAssets/player/animaciones/runForward.anim
+  artifactKey: Guid(20e45d330ed7aa646aadd20bb0b6baed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/runForward.anim using Guid(20e45d330ed7aa646aadd20bb0b6baed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eba891ab56e0c35eddce698dc9bf4b3') in 0,066305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,367308 seconds.
+  path: Assets/myAssets/player/animaciones/walkForward.anim
+  artifactKey: Guid(d7125eeb36c014041948d39bf26a975e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/walkForward.anim using Guid(d7125eeb36c014041948d39bf26a975e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4879c9c69634d68ca217ee3af338c4') in 0,066651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,629615 seconds.
+  path: Assets/myAssets/player/animaciones/runLeft.anim
+  artifactKey: Guid(c855e992d98282140bae06faa9e8c729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/runLeft.anim using Guid(c855e992d98282140bae06faa9e8c729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f87c42a98b59cd77b79ebcfc312051') in 0,084663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3,306469 seconds.
+  path: Assets/myAssets/player/animaciones/walkLeft.anim
+  artifactKey: Guid(82ebcaaf6f3d2c5499f89cd7e0f20f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/walkLeft.anim using Guid(82ebcaaf6f3d2c5499f89cd7e0f20f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933cfa6e7e0f1142ecc540fa77f3b56b') in 0,112552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24,320118 seconds.
+  path: Assets/myAssets/player/animator/controller.controller
+  artifactKey: Guid(1b3f8a95adc858e4cbb322e935e41fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animator/controller.controller using Guid(1b3f8a95adc858e4cbb322e935e41fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b29ff5cbce519dccbea75754556547') in 2,088053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32,287258 seconds.
+  path: Assets/myAssets/player/animaciones/ghateringObjects.anim
+  artifactKey: Guid(529c472ccede42346a5e4fd86ba5de3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/ghateringObjects.anim using Guid(529c472ccede42346a5e4fd86ba5de3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a0682eac8d72d4ee981ac6f1c172595') in 0,144775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16,160907 seconds.
+  path: Assets/myAssets/player/animaciones/rollForward.anim
+  artifactKey: Guid(4536e8639a7643e4d99971cbaf9b6862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/rollForward.anim using Guid(4536e8639a7643e4d99971cbaf9b6862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35595bbe2e00be52f0d2d0d05388336f') in 0,135708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,449243 seconds.
+  path: Assets/myAssets/player/animaciones/rollRunForward.anim
+  artifactKey: Guid(f17a794cb7bb8ac4b99d5f304a9b9532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/rollRunForward.anim using Guid(f17a794cb7bb8ac4b99d5f304a9b9532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7c3b8faf3aad20c6c084fd4d9ada56') in 0,108574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24,874552 seconds.
+  path: Assets/myAssets/player/animaciones/attack2.anim
+  artifactKey: Guid(3a7f3432e77ac4a4888675a1c88a8f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/attack2.anim using Guid(3a7f3432e77ac4a4888675a1c88a8f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ca22a32fb42beb4a890770754d1e93') in 0,078421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,994179 seconds.
+  path: Assets/myAssets/player/animaciones/impactCover.anim
+  artifactKey: Guid(abebe2c94d0a00545a37652bedf40665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/impactCover.anim using Guid(abebe2c94d0a00545a37652bedf40665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9dcc5064183b498a02580f5354ad718') in 0,044551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 145,617715 seconds.
+  path: Assets/myAssets/player/animaciones/attackWalkForward.anim
+  artifactKey: Guid(460771c7e71f18b4bbf5d8fb0d48e3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/attackWalkForward.anim using Guid(460771c7e71f18b4bbf5d8fb0d48e3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70505913744969f9362b6381d8725746') in 0,073991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,334775 seconds.
+  path: Assets/myAssets/player/animaciones/attackSpecial1.anim
+  artifactKey: Guid(628f137b358559b468f629772b103c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/attackSpecial1.anim using Guid(628f137b358559b468f629772b103c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f91786b759e124b66a0d288242d432') in 0,161507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32,576244 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(9a3388bfb80879195bf5cb7450afba06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(9a3388bfb80879195bf5cb7450afba06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50879cfcb46dad6d1dd94bc9eda430a8') in 0,032320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12,224028 seconds.
+  path: Assets/myAssets/player/animations/attack-s-1.anim
+  artifactKey: Guid(9a3388bfb80879195bf5cb7450afba06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-s-1.anim using Guid(9a3388bfb80879195bf5cb7450afba06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2a1a030fffbd76b312acc133b7c2bf') in 0,016059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25,549101 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(2280173bfec9f2bc0b6ef02bcf7d013f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(2280173bfec9f2bc0b6ef02bcf7d013f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac4416c26643cf983762324034a43d3') in 0,022640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10,267093 seconds.
+  path: Assets/myAssets/player/animations/attack-s-2.anim
+  artifactKey: Guid(2280173bfec9f2bc0b6ef02bcf7d013f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-s-2.anim using Guid(2280173bfec9f2bc0b6ef02bcf7d013f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34600ec41033d4011bfed274d2844eb3') in 0,024203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36,299672 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(df84e8a9c191d7423b903305a3a80275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(df84e8a9c191d7423b903305a3a80275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9d46638a30a4037d91f90acf444260') in 0,012707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10,980332 seconds.
+  path: Assets/myAssets/player/animations/clunk.anim
+  artifactKey: Guid(df84e8a9c191d7423b903305a3a80275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/clunk.anim using Guid(df84e8a9c191d7423b903305a3a80275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac668eb61470922557197c946956e96') in 0,009858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17,128098 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(71e493b869b62d101b54688b1e862399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(71e493b869b62d101b54688b1e862399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eeab416ed6ab357cc8d37ea39b67525') in 0,027368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16,622279 seconds.
+  path: Assets/myAssets/player/animations/attack-s-3.anim
+  artifactKey: Guid(71e493b869b62d101b54688b1e862399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-s-3.anim using Guid(71e493b869b62d101b54688b1e862399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e11f8275c4beec39b33bbaa67ad24c2') in 0,026026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40,246898 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(eedc7dc15072687359438213026099bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(eedc7dc15072687359438213026099bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75beb332751c7ee9078fa0dde5d4670e') in 0,008070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,392346 seconds.
+  path: Assets/myAssets/player/animations/uncover.anim
+  artifactKey: Guid(eedc7dc15072687359438213026099bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/uncover.anim using Guid(eedc7dc15072687359438213026099bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c94fc86b71951f03fef1cafbcda32e3b') in 0,007123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15,082144 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(a415dd25e1e9ddaebabb116bd68b2f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(a415dd25e1e9ddaebabb116bd68b2f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80be5f85b6165065d690f8b8074fc554') in 0,005582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,441602 seconds.
+  path: Assets/myAssets/player/animations/covering.anim
+  artifactKey: Guid(a415dd25e1e9ddaebabb116bd68b2f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/covering.anim using Guid(a415dd25e1e9ddaebabb116bd68b2f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443cd782b3c2f935d391251602ab4543') in 0,005878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14,832392 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(d20b6ba4840d40a5898170a0be6e180d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(d20b6ba4840d40a5898170a0be6e180d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24f30bdc63dbd7532863b783a691057') in 0,010639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3,879401 seconds.
+  path: Assets/myAssets/player/animations/covr.anim
+  artifactKey: Guid(d20b6ba4840d40a5898170a0be6e180d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/covr.anim using Guid(d20b6ba4840d40a5898170a0be6e180d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65914b3e338a1a38e97b519015d496ef') in 0,007353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,738589 seconds.
+  path: Assets/myAssets/player/animations/cover.anim
+  artifactKey: Guid(d20b6ba4840d40a5898170a0be6e180d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/cover.anim using Guid(d20b6ba4840d40a5898170a0be6e180d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aac9d69b6c5822c00f0ceee4fa2a152') in 0,008051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18,736683 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(652ced44d04b648c6b46fb473051aec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(652ced44d04b648c6b46fb473051aec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c81ad1061a22b6ca9758b2bc0f52e5e') in 0,011378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,695369 seconds.
+  path: Assets/myAssets/player/animations/attack-m-1.anim
+  artifactKey: Guid(652ced44d04b648c6b46fb473051aec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-m-1.anim using Guid(652ced44d04b648c6b46fb473051aec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8279e5e5b39089ba7321ab0fa034e64f') in 0,013088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23,644493 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(d2a427111ea02cdee9a56a5596984e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(d2a427111ea02cdee9a56a5596984e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eaf23153695e4e9de830c69a0efb8a9') in 0,032219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16,327712 seconds.
+  path: Assets/myAssets/player/animations/power-1.anim
+  artifactKey: Guid(d2a427111ea02cdee9a56a5596984e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/power-1.anim using Guid(d2a427111ea02cdee9a56a5596984e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e97da5f8790121080ee322d76ec36433') in 0,014875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45,231562 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(746a410e1c2fdef4086ad06bfb19488a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(746a410e1c2fdef4086ad06bfb19488a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046a37705e2fd61c1c5d6722c7c0b531') in 0,008236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13,618322 seconds.
+  path: Assets/myAssets/player/animations/impact-down-cover.anim
+  artifactKey: Guid(746a410e1c2fdef4086ad06bfb19488a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/impact-down-cover.anim using Guid(746a410e1c2fdef4086ad06bfb19488a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49bdfed286b53d048299b6d05f28d2d2') in 0,008280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17,853305 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(c360192f88aae7ed7ab1ac046b6ba64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(c360192f88aae7ed7ab1ac046b6ba64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9faf472a4ca4cf35e89266e39b1c04c') in 0,005439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,466583 seconds.
+  path: Assets/myAssets/player/animations/covering-down.anim
+  artifactKey: Guid(c360192f88aae7ed7ab1ac046b6ba64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/covering-down.anim using Guid(c360192f88aae7ed7ab1ac046b6ba64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8769286331c28271e1c6226d03e6b601') in 0,005973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17,771558 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(dcb0593e5c0cd2802925432004388c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(dcb0593e5c0cd2802925432004388c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343397436dcdeb6f40c0a7af0e2c5919') in 0,013067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,872156 seconds.
+  path: Assets/myAssets/player/animations/cover-down.anim
+  artifactKey: Guid(dcb0593e5c0cd2802925432004388c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/cover-down.anim using Guid(dcb0593e5c0cd2802925432004388c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742170ef615597dcd9c0c25d30d0ca41') in 0,010119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39,924320 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(42f30d32dc814077f8afc9f719351995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(42f30d32dc814077f8afc9f719351995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a0aa2eae8b5a7ab0b08d99bed63dfd') in 0,007384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,525555 seconds.
+  path: Assets/myAssets/player/animations/crouched.anim
+  artifactKey: Guid(42f30d32dc814077f8afc9f719351995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/crouched.anim using Guid(42f30d32dc814077f8afc9f719351995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8686a52f0ff2ab621cf722a9e4cbf301') in 0,005629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31,012599 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(3d5a81dfc19a5573f9fc31fb40af5f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(3d5a81dfc19a5573f9fc31fb40af5f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137b9675a1b1aa3d90c463a97efaf0ad') in 0,007284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,334584 seconds.
+  path: Assets/myAssets/player/animations/bend.anim
+  artifactKey: Guid(3d5a81dfc19a5573f9fc31fb40af5f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/bend.anim using Guid(3d5a81dfc19a5573f9fc31fb40af5f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf1c742ddfed2e670d1470b7bc102cf') in 0,007620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26,094133 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(1d13c04d611f8ba5a86a55f9d0565abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(1d13c04d611f8ba5a86a55f9d0565abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd6f9ff710ed56b12405b2b0eb717d9') in 0,012864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20,621192 seconds.
+  path: Assets/myAssets/player/animations/uncover-down.anim
+  artifactKey: Guid(1d13c04d611f8ba5a86a55f9d0565abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/uncover-down.anim using Guid(1d13c04d611f8ba5a86a55f9d0565abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d95475eaf055ea4b99b5d7e189bffe') in 0,006661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21,904412 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(22070079ad219eeeb9937bfa1f363f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(22070079ad219eeeb9937bfa1f363f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0bc7ff1209a7dd74a61e0e4852b910') in 0,013354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,063829 seconds.
+  path: Assets/myAssets/player/animations/impact-down.anim
+  artifactKey: Guid(22070079ad219eeeb9937bfa1f363f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/impact-down.anim using Guid(22070079ad219eeeb9937bfa1f363f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d678b098845071eb75db2b4dc8c714e') in 0,007204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28,419564 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(de523e4e8a1503aa3959fc46331f6af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(de523e4e8a1503aa3959fc46331f6af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c217cdca4f7926aa16dc999a9a28dd') in 0,006469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,144364 seconds.
+  path: Assets/myAssets/player/animations/stand-up.anim
+  artifactKey: Guid(de523e4e8a1503aa3959fc46331f6af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/stand-up.anim using Guid(de523e4e8a1503aa3959fc46331f6af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43ccda671ceddf7d3467b095b97569b') in 0,008408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23,123287 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(f91b11f5ee0538a3b8b5b60788a34011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(f91b11f5ee0538a3b8b5b60788a34011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9693e3e305a12a4796cedaab8599f27d') in 0,019189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10,240285 seconds.
+  path: Assets/myAssets/player/animations/die-1.anim
+  artifactKey: Guid(f91b11f5ee0538a3b8b5b60788a34011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/die-1.anim using Guid(f91b11f5ee0538a3b8b5b60788a34011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c19523cd794ffbeeca917377b1d92ff') in 0,020058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25,867815 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(6a00a23e6b9226987a5877dbe4863491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(6a00a23e6b9226987a5877dbe4863491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3baa54e49bff9e67c406d389b13e42') in 0,017122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5,929732 seconds.
+  path: Assets/myAssets/player/animations/die-2.anim
+  artifactKey: Guid(6a00a23e6b9226987a5877dbe4863491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/die-2.anim using Guid(6a00a23e6b9226987a5877dbe4863491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa3e3ccce4c6f10fc3314066ec8d86c') in 0,017700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24,492959 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(53c53e9c9f9acc9da9dbbc2f0c388384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(53c53e9c9f9acc9da9dbbc2f0c388384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb87dfc6ac8f84f78ac6e712e36d58a') in 0,015559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,193538 seconds.
+  path: Assets/myAssets/player/animations/break-1.anim
+  artifactKey: Guid(53c53e9c9f9acc9da9dbbc2f0c388384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/break-1.anim using Guid(53c53e9c9f9acc9da9dbbc2f0c388384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd86f866aff4b7ea047399b66716710') in 0,019508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21,201781 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(d6f6eb4f3a5ee85e9bbb7cc55ae5e789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(d6f6eb4f3a5ee85e9bbb7cc55ae5e789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20561ced2dcb8c5fec50fc5912d78ab') in 0,020427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,375629 seconds.
+  path: Assets/myAssets/player/animations/break-2.anim
+  artifactKey: Guid(d6f6eb4f3a5ee85e9bbb7cc55ae5e789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/break-2.anim using Guid(d6f6eb4f3a5ee85e9bbb7cc55ae5e789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e659b82bffdb437c5bb5d28d0ffeac9') in 0,017567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23,580207 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(0992a8284985968f9bccb7552c5f4304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(0992a8284985968f9bccb7552c5f4304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6f1f021c199cfc63d5f9c585c61ba5') in 0,007713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,123691 seconds.
+  path: Assets/myAssets/player/animations/idle-1.anim
+  artifactKey: Guid(0992a8284985968f9bccb7552c5f4304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/idle-1.anim using Guid(0992a8284985968f9bccb7552c5f4304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d20ae3c3355c766cb3a40a017e5110') in 0,007283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24,425246 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(df828ec1c643a1b3cbd1475b9d282475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(df828ec1c643a1b3cbd1475b9d282475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f4fe82fe381682d169468bce464efed') in 0,008590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8,333395 seconds.
+  path: Assets/myAssets/player/animations/break-3.anim
+  artifactKey: Guid(df828ec1c643a1b3cbd1475b9d282475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/break-3.anim using Guid(df828ec1c643a1b3cbd1475b9d282475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d83b3481b235502539bb4d47cff768a') in 0,011624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31,554448 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(14e1aab7b8a53689fa5c65147c5ee9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(14e1aab7b8a53689fa5c65147c5ee9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb14b91d5fa996a039797eaa37bdb97f') in 0,011202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11,891329 seconds.
+  path: Assets/myAssets/player/animations/impact-middle.anim
+  artifactKey: Guid(14e1aab7b8a53689fa5c65147c5ee9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/impact-middle.anim using Guid(14e1aab7b8a53689fa5c65147c5ee9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f99a668848b34628504ae9f1f13de56e') in 0,017646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67,223460 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(bce5ff4fd6d4c903cb6e01bd740043c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(bce5ff4fd6d4c903cb6e01bd740043c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e63dd2bef7cc38575add77800bb64f5') in 0,009782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10,625507 seconds.
+  path: Assets/myAssets/player/animations/impact-top.anim
+  artifactKey: Guid(bce5ff4fd6d4c903cb6e01bd740043c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/impact-top.anim using Guid(bce5ff4fd6d4c903cb6e01bd740043c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ab1017be3ee7d441453bd19c402396') in 0,009267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23,445606 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(b0d459e5b82a6d615a96b69a6469cad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(b0d459e5b82a6d615a96b69a6469cad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25bc55d00091932fffe98d63b0b11a10') in 0,012362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,620231 seconds.
+  path: Assets/myAssets/player/animations/impact-cover.anim
+  artifactKey: Guid(b0d459e5b82a6d615a96b69a6469cad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/impact-cover.anim using Guid(b0d459e5b82a6d615a96b69a6469cad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64dd803076c1e67548a3614b049ef7c2') in 0,016028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26,250220 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(780661fecabd90fbe8ed298c056801da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(780661fecabd90fbe8ed298c056801da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f764ca9ba2f2f184266312ac586771a') in 0,019071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8,708616 seconds.
+  path: Assets/myAssets/player/animations/jump-1.anim
+  artifactKey: Guid(780661fecabd90fbe8ed298c056801da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/jump-1.anim using Guid(780661fecabd90fbe8ed298c056801da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216cbbf991fe9a44719b811e4ece7776') in 0,016265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20,918053 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(c037c7ff1059eeaf5bb1a32bd7dc9143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(c037c7ff1059eeaf5bb1a32bd7dc9143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708e2ac773a9be2d28f62a0db835a233') in 0,013392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,670742 seconds.
+  path: Assets/myAssets/player/animations/jump-run.anim
+  artifactKey: Guid(c037c7ff1059eeaf5bb1a32bd7dc9143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/jump-run.anim using Guid(c037c7ff1059eeaf5bb1a32bd7dc9143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff28e52c4eb1d8fbc76f5bea3e4457bf') in 0,013450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30,072618 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(e5db87e597a146b4095a213c4e297428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(e5db87e597a146b4095a213c4e297428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1516be8c9f3461cf67c648fda8ba6235') in 0,017836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,346847 seconds.
+  path: Assets/myAssets/player/animations/attack-kick.anim
+  artifactKey: Guid(e5db87e597a146b4095a213c4e297428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-kick.anim using Guid(e5db87e597a146b4095a213c4e297428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2256b66031485895b86703366277d672') in 0,017914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36,890919 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(0edc8d8ff1aa1dd48a4bc65f7d66a78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(0edc8d8ff1aa1dd48a4bc65f7d66a78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572010b508791f8e127d35f3ca5ee304') in 0,014011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5,061950 seconds.
+  path: Assets/myAssets/player/animations/rage.anim
+  artifactKey: Guid(0edc8d8ff1aa1dd48a4bc65f7d66a78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/rage.anim using Guid(0edc8d8ff1aa1dd48a4bc65f7d66a78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4de41d1d55b0f63cae76674e85f782') in 0,017340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21,035725 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(f0ef5fe74ad46b00da050d4181ed6e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(f0ef5fe74ad46b00da050d4181ed6e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa32e7cbe6ab1dea380172a2df0f67d') in 0,008811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,636705 seconds.
+  path: Assets/myAssets/player/animations/run-back.anim
+  artifactKey: Guid(f0ef5fe74ad46b00da050d4181ed6e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/run-back.anim using Guid(f0ef5fe74ad46b00da050d4181ed6e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e037d8a7172fbf38f98a232676da58c') in 0,009071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19,115331 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(ee54788bc267599f0a26c4ffd0fc85ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(ee54788bc267599f0a26c4ffd0fc85ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06dc62e54b74442124227bba449b7fb') in 0,009779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,982438 seconds.
+  path: Assets/myAssets/player/animations/run-front.anim
+  artifactKey: Guid(ee54788bc267599f0a26c4ffd0fc85ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/run-front.anim using Guid(ee54788bc267599f0a26c4ffd0fc85ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a53eda12076fe24ecb0c00a0b510276d') in 0,011866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 135,199114 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(03367dfd4d6254d2cb2106cdd3adcc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(03367dfd4d6254d2cb2106cdd3adcc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e72c971566e64db1c264ee0f3319c8e') in 0,034750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31,446629 seconds.
+  path: Assets/myAssets/player/animations/attack-c-1.anim
+  artifactKey: Guid(03367dfd4d6254d2cb2106cdd3adcc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-c-1.anim using Guid(03367dfd4d6254d2cb2106cdd3adcc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd931c03baac144eb01a4abe8d98d8c') in 0,043967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 234,929925 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(06cd12c71e686d7cdb1eb6efd9e9607b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(06cd12c71e686d7cdb1eb6efd9e9607b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a48a51f0eddde7c7133babe7d3261ca4') in 0,010326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,420122 seconds.
+  path: Assets/myAssets/player/animations/walk-front.anim
+  artifactKey: Guid(06cd12c71e686d7cdb1eb6efd9e9607b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/walk-front.anim using Guid(06cd12c71e686d7cdb1eb6efd9e9607b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf7855bb38b49b0a1bf29975b7f3c67d') in 0,011901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53,945299 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(fc13cfde8fda5af22ad46085724331a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(fc13cfde8fda5af22ad46085724331a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a78613f0ead2af1431d2f6767ed3228b') in 0,008316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,560803 seconds.
+  path: Assets/myAssets/player/animations/walk-back.anim
+  artifactKey: Guid(fc13cfde8fda5af22ad46085724331a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/walk-back.anim using Guid(fc13cfde8fda5af22ad46085724331a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb08c3cc40772ebeba812da537aa560') in 0,010869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39,141584 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(84eda2c8b721a267185003fe36ca0341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(84eda2c8b721a267185003fe36ca0341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02800441d7a452f3ea437a8b45dbf4f5') in 0,008216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,996654 seconds.
+  path: Assets/myAssets/player/animations/turn-right.anim
+  artifactKey: Guid(84eda2c8b721a267185003fe36ca0341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/turn-right.anim using Guid(84eda2c8b721a267185003fe36ca0341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1b926bd9f87e7e0d48d8f22e8ece4c') in 0,009487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27,228458 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(c764c6c65f0417bdc96e0fba20fae009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(c764c6c65f0417bdc96e0fba20fae009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f569c6d0b553cb4128a857cd6f2d7799') in 0,007418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,231027 seconds.
+  path: Assets/myAssets/player/animations/turn-left.anim
+  artifactKey: Guid(c764c6c65f0417bdc96e0fba20fae009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/turn-left.anim using Guid(c764c6c65f0417bdc96e0fba20fae009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00630cd85c6b6ce14b8eea1ed9ecfb99') in 0,009664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16,180510 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(f8ff80d295312fb0793a28bc2d84bee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(f8ff80d295312fb0793a28bc2d84bee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19a407f3dfe0e1b263f30ea565937caf') in 0,010718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,807415 seconds.
+  path: Assets/myAssets/player/animations/walk-right.anim
+  artifactKey: Guid(f8ff80d295312fb0793a28bc2d84bee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/walk-right.anim using Guid(f8ff80d295312fb0793a28bc2d84bee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300d80394e4665dc3d7edb442a1f02f6') in 0,013238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33,396537 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(4ee27cb4c1ca7f0a1828995161740585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(4ee27cb4c1ca7f0a1828995161740585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d8ba6bf8e734b0b51ff366b9418ef9') in 0,009264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,565003 seconds.
+  path: Assets/myAssets/player/animations/run-right.anim
+  artifactKey: Guid(4ee27cb4c1ca7f0a1828995161740585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/run-right.anim using Guid(4ee27cb4c1ca7f0a1828995161740585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c91a1b24b357c9b05edda44c811fcb') in 0,008422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17,019509 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(57353800d93a82fb1b7e837dc668a658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(57353800d93a82fb1b7e837dc668a658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e531a9037751e7a6504c455696e4c33c') in 0,021460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,322774 seconds.
+  path: Assets/myAssets/player/animations/run-left.anim
+  artifactKey: Guid(57353800d93a82fb1b7e837dc668a658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/run-left.anim using Guid(57353800d93a82fb1b7e837dc668a658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf800fed3d6b0acb76c26b4d5783eed7') in 0,014869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19,416013 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(64b839d32bd7e1ecfb6c9a18408421b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(64b839d32bd7e1ecfb6c9a18408421b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bedf721e0f27d284dd68698071cdee5b') in 0,009247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,954588 seconds.
+  path: Assets/myAssets/player/animations/walk-left.anim
+  artifactKey: Guid(64b839d32bd7e1ecfb6c9a18408421b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/walk-left.anim using Guid(64b839d32bd7e1ecfb6c9a18408421b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f56ab823fca040eb86bfcfadac8ad75') in 0,012393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24,316214 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(9a3dd4052c8927f419d79324fec5f6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(9a3dd4052c8927f419d79324fec5f6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44a2bed3807575857961c785ff70b9b') in 0,013632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8,118532 seconds.
+  path: Assets/myAssets/player/animations/attack-1.anim
+  artifactKey: Guid(9a3dd4052c8927f419d79324fec5f6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-1.anim using Guid(9a3dd4052c8927f419d79324fec5f6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4903ca06c12f69fd6c9d38b41bd8ffc1') in 0,026633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31,521274 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(435fc8a9d794dd0e29cd8aae53347449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(435fc8a9d794dd0e29cd8aae53347449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9bae1b3650fc92f1d8b8eb9db4774c') in 0,013608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13,040751 seconds.
+  path: Assets/myAssets/player/animations/atack-crounched.anim
+  artifactKey: Guid(435fc8a9d794dd0e29cd8aae53347449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/atack-crounched.anim using Guid(435fc8a9d794dd0e29cd8aae53347449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b643086c005811c3a3214fd161b63a28') in 0,018243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,043772 seconds.
+  path: Assets/myAssets/player/animations/attack-crounched.anim
+  artifactKey: Guid(435fc8a9d794dd0e29cd8aae53347449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-crounched.anim using Guid(435fc8a9d794dd0e29cd8aae53347449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4edab27624f202d3977414fb0f60b3e7') in 0,019220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46,896144 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(3128014ce838e692c80ae1ee3df9c743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(3128014ce838e692c80ae1ee3df9c743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f943d294f6ab463090b168655bfb56c9') in 0,031962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26,077937 seconds.
+  path: Assets/myAssets/player/animations/attack-.anim
+  artifactKey: Guid(3128014ce838e692c80ae1ee3df9c743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-.anim using Guid(3128014ce838e692c80ae1ee3df9c743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76876e2fa2fd39e6187e3524608e0961') in 0,030823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10,925433 seconds.
+  path: Assets/myAssets/player/animations/attack-s-4.anim
+  artifactKey: Guid(3128014ce838e692c80ae1ee3df9c743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-s-4.anim using Guid(3128014ce838e692c80ae1ee3df9c743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3822c3811df036186b32457ff586fc3') in 0,026449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23,786545 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(9620efa6735fbc61cbffea5783d9c917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(9620efa6735fbc61cbffea5783d9c917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ac79b5e0148cf9920913c958c6c90a') in 0,014711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,098368 seconds.
+  path: Assets/myAssets/player/animations/attack-2.anim
+  artifactKey: Guid(9620efa6735fbc61cbffea5783d9c917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/attack-2.anim using Guid(9620efa6735fbc61cbffea5783d9c917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48cbb6871e62d162ccc775c0cdacbf53') in 0,018158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58,636214 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(635cba611b830ff86bff439ea5127ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(635cba611b830ff86bff439ea5127ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfbbad5a15c1f7ec8c1ff78fb7da3d98') in 0,011390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13,326747 seconds.
+  path: Assets/myAssets/player/animations/draw.anim
+  artifactKey: Guid(635cba611b830ff86bff439ea5127ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/draw.anim using Guid(635cba611b830ff86bff439ea5127ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e242750bee9c697d85748f596ba39afa') in 0,012525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 104,401432 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(3191ba273619082c8bc1e660f748e5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(3191ba273619082c8bc1e660f748e5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374c6677768775ad3dc925db56023c68') in 0,010597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25,097715 seconds.
+  path: Assets/myAssets/player/animations/push.anim
+  artifactKey: Guid(3191ba273619082c8bc1e660f748e5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/push.anim using Guid(3191ba273619082c8bc1e660f748e5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9976a21595f2d633ae8ca45d43a99080') in 0,012155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 337,341346 seconds.
+  path: Assets/myAssets/player/animaciones/impactIdle.anim
+  artifactKey: Guid(1e43d18e2489a5d42aadf7dd53c50791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/impactIdle.anim using Guid(1e43d18e2489a5d42aadf7dd53c50791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47fba09e35a87dde35349af9f1318ae3') in 0,074171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 69,825469 seconds.
+  path: Assets/myAssets/player/animaciones/heal.anim
+  artifactKey: Guid(b323cecbab910cc4a9242619d25c3f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animaciones/heal.anim using Guid(b323cecbab910cc4a9242619d25c3f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e738e38d165621b801cc97123737c48a') in 0,075817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1460,346091 seconds.
+  path: Assets/myAssets/player/fbx/Falling To Roll.fbx
+  artifactKey: Guid(678c7274774ca3e16835aee6b4d62105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/fbx/Falling To Roll.fbx using Guid(678c7274774ca3e16835aee6b4d62105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e075a7010eb3d02060a0d7118976cc40') in 1,121168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000044 seconds.
+  path: Assets/myAssets/player/fbx/Sprinting Forward Roll.fbx
+  artifactKey: Guid(e35dcac45baa8bd5fbe04c000ea9ca44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/fbx/Sprinting Forward Roll.fbx using Guid(e35dcac45baa8bd5fbe04c000ea9ca44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25631f655f46afdb41558853a3e6604c') in 0,200647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000064 seconds.
+  path: Assets/myAssets/player/fbx/Gathering Objects.fbx
+  artifactKey: Guid(74b7f092d6b1ed1e3b6109ddff04b2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/fbx/Gathering Objects.fbx using Guid(74b7f092d6b1ed1e3b6109ddff04b2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1106f3b62d1241a4759df3376f9a42b') in 0,170585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27,625894 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(12b8b43f737b6ce5781b95552f909727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(12b8b43f737b6ce5781b95552f909727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978211ced1e28c98e84b48a3a2a60347') in 0,036819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,713214 seconds.
+  path: Assets/myAssets/player/animations/ghatering.anim
+  artifactKey: Guid(12b8b43f737b6ce5781b95552f909727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/ghatering.anim using Guid(12b8b43f737b6ce5781b95552f909727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b800b9b0d0243fddd7f943020092513c') in 0,035540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22,919885 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(bc846a518e853ac27945ea1aa514fbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(bc846a518e853ac27945ea1aa514fbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda35f0deb6074795eff978a49edebbf') in 0,026785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,644238 seconds.
+  path: Assets/myAssets/player/animations/roll-run.anim
+  artifactKey: Guid(bc846a518e853ac27945ea1aa514fbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/roll-run.anim using Guid(bc846a518e853ac27945ea1aa514fbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1998727f2c2240b76e6b10972088760e') in 0,025119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11,925955 seconds.
+  path: Assets/myAssets/player/animations/jump-idle.anim
+  artifactKey: Guid(780661fecabd90fbe8ed298c056801da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/jump-idle.anim using Guid(780661fecabd90fbe8ed298c056801da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75731a5897735108d04c07acd5e872b1') in 0,014785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 226,531118 seconds.
+  path: Assets/myAssets/player/fbx/Stand To Roll.fbx
+  artifactKey: Guid(09e65d11f1a4c14a3bf2b28695e7a8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/fbx/Stand To Roll.fbx using Guid(09e65d11f1a4c14a3bf2b28695e7a8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f89aef3394806ec33eb4bd01d771283e') in 0,459211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23,176047 seconds.
+  path: Assets/myAssets/player/animations/mixamo.com.anim
+  artifactKey: Guid(aab5fe50bd975aad98c45170171b3300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/mixamo.com.anim using Guid(aab5fe50bd975aad98c45170171b3300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd94d1e9a99fd8f68c8d8932056d87dbd') in 0,046794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15,806945 seconds.
+  path: Assets/myAssets/player/animations/roll-idle.anim
+  artifactKey: Guid(aab5fe50bd975aad98c45170171b3300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/myAssets/player/animations/roll-idle.anim using Guid(aab5fe50bd975aad98c45170171b3300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7704e9e9683ca2e77a139d2c829fb0b2') in 0,038997 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
