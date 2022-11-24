@@ -104,23 +104,25 @@ public class platerState : MonoBehaviour
     void movePlayer(){
         move = getInputMove();
         if(move.magnitude > 0 && !crouched){
-            move = calcDirectionMove();
-            float velocity = 1;
-            moveZ = verticalInput;
-            moveX = horizontalInput;
-            if(verticalInput != 0){
-                moveX = 0;
-            }
-            if(verticalInput > 0){
-                velocity = walkSpeed;
-            }
-            if(runInput){
-                velocity = runSpeed;
-                moveZ *= 2;
-                moveX *= 2;
-            }
             isMoving = true;
-            controller.Move(move * velocity * Time.deltaTime);
+            if(canMove){
+                move = calcDirectionMove();
+                float velocity = 1;
+                moveZ = verticalInput;
+                moveX = horizontalInput;
+                if(verticalInput != 0){
+                    moveX = 0;
+                }
+                if(verticalInput > 0){
+                    velocity = walkSpeed;
+                }
+                if(runInput){
+                    velocity = runSpeed;
+                    moveZ *= 2;
+                    moveX *= 2;
+                }
+                controller.Move(move * velocity * Time.deltaTime);
+            }
         }
         else{
             moveX = 0;
@@ -238,6 +240,10 @@ public class platerState : MonoBehaviour
         float rotationX = camara.transform.rotation.x;
         controller.Move(new Vector3(0, move.y * Time.deltaTime, 0));
         camara.transform.rotation = Quaternion.Euler(rotationX, camara.transform.rotation.y, camara.transform.rotation.z);
+    }
+
+    public void blockMove(){
+        canMove = false;
     }
 
     public void moveFree(){
