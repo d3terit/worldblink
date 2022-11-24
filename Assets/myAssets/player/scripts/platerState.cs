@@ -9,13 +9,12 @@ public class platerState : MonoBehaviour
     public Camera camara;
     #endregion
     #region Estados
-    public enum STATE {Free, Attack, Cover, Roll, Dead, Bloqued};
+    public enum STATE {Free, Attack, Cover, Roll, Crouched, Dead, Bloqued};
     public STATE state = STATE.Free;
     #endregion
 
     #region Direcion del movimiento
     public enum Direction {None= 0, Left, Right, Forward, Backward};
-    private Direction direction = Direction.None;
     private Vector3 move; 
     #endregion
 
@@ -25,6 +24,7 @@ public class platerState : MonoBehaviour
     public bool roll = false;
     private bool cover = false;
     private bool impact = false;
+    private bool crouched = false;
     private float moveX = 0;
     private float moveZ = 0;
     
@@ -53,6 +53,7 @@ public class platerState : MonoBehaviour
 
     #region movimiento
     private bool isJumping = false;
+    private bool canMove = true;
     private float velGravity = 0;
     #endregion
     
@@ -87,6 +88,9 @@ public class platerState : MonoBehaviour
             case STATE.Roll:
                 rollState();
                 break;
+            case STATE.Crouched:
+                crouchedState();
+                break;
             case STATE.Dead:
                 deadState();
                 break;
@@ -100,7 +104,7 @@ public class platerState : MonoBehaviour
     }
     void movePlayer(){
         move = getInputMove();
-        if(move.magnitude > 0){
+        if(move.magnitude > 0 && !crouched){
             move = calcDirectionMove();
             float velocity = 1;
             moveZ = verticalInput;
@@ -142,6 +146,12 @@ public class platerState : MonoBehaviour
         controller.Move(move * velocity * 2 * Time.deltaTime);
     }
 
+    void crouchedState(){
+        if(canMove){
+            state = STATE.Free;
+        }
+    }
+
     void deadState(){
 
     }
@@ -151,10 +161,11 @@ public class platerState : MonoBehaviour
     }
     
     void checkForStateChange(){
-        bool inJump = Input.GetKeyDown(KeyCode.Space);
+        bool inJump = Input.GetKey(KeyCode.Space);
         bool inRoll = Input.GetKey(KeyCode.C);
-        bool inAttack = Input.GetMouseButtonDown(0);
-        bool inCover = Input.GetMouseButtonDown(1);
+        bool inAttack = Input.GetMouseButton(0);
+        bool inCover = Input.GetMouseButton(1);
+        bool inCrouched = Input.GetKey(KeyCode.LeftControl);
 
         switch (state)
         {
@@ -165,9 +176,19 @@ public class platerState : MonoBehaviour
                     roll = true;
                     state = STATE.Roll;
                 }
-                break;    
-            case STATE.Roll:
-                break;
+                else if(inCrouched){
+                    crouched = true;          
+                    canMove = false;
+                    state = STATE.Crouched;
+                }
+                break;  
+            case STATE.Crouched:
+                crouched = inCrouched;
+                if(inCrouched){
+                    canMove = false;
+                }
+                attack = inAttack;
+                break;  
             default:
                 break;
         }
@@ -219,7 +240,10 @@ public class platerState : MonoBehaviour
     public void moveFree(){
         if(state == STATE.Roll){
             roll = false;
+        }else if(state == STATE.Crouched){
+            crouched = false;
         }
+        canMove = true;
         state = STATE.Free;
     }
 
@@ -229,6 +253,7 @@ public class platerState : MonoBehaviour
         animator.SetBool("Attack", attack);
         animator.SetBool("Roll", roll);
         animator.SetBool("Cover", cover);
+        animator.SetBool("Crouched", crouched);
         animator.SetBool("Impact", impact);
         animator.SetFloat("MoveX", moveX);
         animator.SetFloat("MoveZ", moveZ);
