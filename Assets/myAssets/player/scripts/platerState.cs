@@ -79,10 +79,8 @@ public class platerState : MonoBehaviour
         switch(state){
             case STATE.Free:
             case STATE.Cover:
-                movePlayer();
-                break;
             case STATE.Attack:
-                attackState();
+                movePlayer();
                 break;
             case STATE.Roll:
                 rollState();
@@ -129,10 +127,6 @@ public class platerState : MonoBehaviour
             moveZ = 0;
             isMoving = false;
         }
-    }
-
-    void attackState(){
-
     }
     
     void rollState(){
@@ -181,6 +175,9 @@ public class platerState : MonoBehaviour
                 }else if(inCover){
                     cover = true;
                     state = STATE.Cover;
+                }else if(inAttack){
+                    attack = true;
+                    state = STATE.Attack;
                 }
                 break;  
             case STATE.Crouched:
@@ -194,6 +191,12 @@ public class platerState : MonoBehaviour
                     state = STATE.Free;
                 }
                 break;
+            case STATE.Attack:
+                attack = inAttack;
+                if(!attack){
+                    state = STATE.Free;
+                }
+                break;
             default:
                 break;
         }
@@ -203,11 +206,19 @@ public class platerState : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-        float zDirection = verticalInput;
-        if(state == STATE.Roll){
-            zDirection = 1;
-        }
         runInput = Input.GetKey(KeyCode.LeftShift);
+        float zDirection = verticalInput;
+        switch (state){
+            case STATE.Attack:
+                horizontalInput = 0;
+                if(verticalInput < 0) zDirection = 0;
+                break;
+            case STATE.Roll:
+                zDirection = 1;
+                break;
+            default:
+                break;
+        }
         Vector3 direccion = new Vector3(horizontalInput, 0, zDirection);
         direccion = Vector3.ClampMagnitude(direccion, 1);
         return direccion;
