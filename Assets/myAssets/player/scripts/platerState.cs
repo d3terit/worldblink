@@ -135,7 +135,6 @@ public class platerState : MonoBehaviour
     void rollState(){
         move = getInputMove();
         move = calcDirectionMove();
-        Debug.Log(move);
         float velocity = walkSpeed;
         if(runInput && verticalInput > 0){
             velocity = runSpeed;
