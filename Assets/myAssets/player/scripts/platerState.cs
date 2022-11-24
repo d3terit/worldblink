@@ -25,6 +25,7 @@ public class platerState : MonoBehaviour
     private bool cover = false;
     private bool impact = false;
     private bool crouched = false;
+    private bool isMoving = false;
     private float moveX = 0;
     private float moveZ = 0;
     
@@ -77,13 +78,11 @@ public class platerState : MonoBehaviour
         isJumping = !controller.isGrounded;
         switch(state){
             case STATE.Free:
+            case STATE.Cover:
                 movePlayer();
                 break;
             case STATE.Attack:
                 attackState();
-                break;
-            case STATE.Cover:
-                coverState();
                 break;
             case STATE.Roll:
                 rollState();
@@ -120,19 +119,17 @@ public class platerState : MonoBehaviour
                 moveZ *= 2;
                 moveX *= 2;
             }
+            isMoving = true;
             controller.Move(move * velocity * Time.deltaTime);
         }
         else{
             moveX = 0;
             moveZ = 0;
+            isMoving = false;
         }
     }
 
     void attackState(){
-
-    }
-
-    void coverState(){
 
     }
     
@@ -166,7 +163,6 @@ public class platerState : MonoBehaviour
         bool inAttack = Input.GetMouseButton(0);
         bool inCover = Input.GetMouseButton(1);
         bool inCrouched = Input.GetKey(KeyCode.LeftControl);
-
         switch (state)
         {
             case STATE.Free:
@@ -180,15 +176,22 @@ public class platerState : MonoBehaviour
                     crouched = true;          
                     canMove = false;
                     state = STATE.Crouched;
+                }else if(inCover){
+                    cover = true;
+                    state = STATE.Cover;
                 }
                 break;  
             case STATE.Crouched:
                 crouched = inCrouched;
-                if(inCrouched){
-                    canMove = false;
-                }
                 attack = inAttack;
+                cover = inCover;
                 break;  
+            case STATE.Cover:
+                cover = inCover;
+                if(!cover){
+                    state = STATE.Free;
+                }
+                break;
             default:
                 break;
         }
@@ -255,6 +258,7 @@ public class platerState : MonoBehaviour
         animator.SetBool("Cover", cover);
         animator.SetBool("Crouched", crouched);
         animator.SetBool("Impact", impact);
+        animator.SetBool("Move", isMoving);
         animator.SetFloat("MoveX", moveX);
         animator.SetFloat("MoveZ", moveZ);
     }
