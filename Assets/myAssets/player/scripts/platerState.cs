@@ -20,14 +20,13 @@ public class platerState : MonoBehaviour
     #region states to animation
     private bool jump = false;
     private bool attack = false;
-    public bool roll = false;
+    private bool roll = false;
     private bool cover = false;
     private bool impact = false;
     private bool crouched = false;
     private bool isMoving = false;
     private float moveX = 0;
-    private float moveZ = 0;
-    
+    private float moveZ = 0;    
     #endregion
 
     private CharacterController controller;
@@ -57,6 +56,11 @@ public class platerState : MonoBehaviour
     private bool noBack = false;
     private bool canRunningToAttack = true;
     private float velGravity = 0;
+    #endregion
+
+    #region particulas
+    public ParticleSystem heal1;
+    public ParticleSystem heal2;
     #endregion
     
     
@@ -163,6 +167,9 @@ public class platerState : MonoBehaviour
         bool inAttack = Input.GetMouseButton(0);
         bool inCover = Input.GetMouseButton(1);
         bool inCrouched = Input.GetKey(KeyCode.LeftControl);
+        bool attackMagic = Input.GetKeyDown(KeyCode.X);
+        bool inRage = Input.GetKeyDown(KeyCode.Q);
+        bool inPower1 = Input.GetKeyDown(KeyCode.Alpha1);
         switch (state)
         {
             case STATE.Free:
@@ -183,6 +190,17 @@ public class platerState : MonoBehaviour
                     attack = true;
                     noBack = true;
                     state = STATE.Attack;
+                }else if(attackMagic && !isJumping){
+                    animator.Play("attack-m-1");
+                    state = STATE.Bloqued;
+                }else if(inRage && !isJumping){
+                    animator.Play("rage");
+                    heal1.Play();
+                    heal2.Play();
+                    state = STATE.Bloqued;
+                }else if(inPower1 && !isJumping){
+                    animator.Play("power-1");
+                    state = STATE.Bloqued;
                 }
                 break;  
             case STATE.Crouched:
@@ -200,8 +218,6 @@ public class platerState : MonoBehaviour
                 attack = inAttack;
                 if(attack){
                     noBack = true;
-                }else{
-                    state = STATE.Free;
                 }
                 break;
             default:
@@ -276,11 +292,8 @@ public class platerState : MonoBehaviour
     }
 
     public void moveFree(){
-        if(state == STATE.Roll){
-            roll = false;
-        }else if(state == STATE.Crouched){
-            crouched = false;
-        }
+        roll = false;
+        crouched = false;
         canMove = true;
         noBack = false;
         canRunningToAttack = false;
