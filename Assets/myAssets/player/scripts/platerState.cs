@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class platerState : MonoBehaviour
 {
     
@@ -55,15 +54,20 @@ public class platerState : MonoBehaviour
     #region movimiento
     private bool isJumping = false;
     private bool canMove = true;
+    private bool noBack = false;
+    private bool canRunningToAttack = true;
     private float velGravity = 0;
     #endregion
     
     
     // Start is called before the first frame update
-    void Awake()
-    {
+    void Awake(){
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+    }
+
+    void Start(){
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -177,6 +181,7 @@ public class platerState : MonoBehaviour
                     state = STATE.Cover;
                 }else if(inAttack){
                     attack = true;
+                    noBack = true;
                     state = STATE.Attack;
                 }
                 break;  
@@ -193,7 +198,9 @@ public class platerState : MonoBehaviour
                 break;
             case STATE.Attack:
                 attack = inAttack;
-                if(!attack){
+                if(attack){
+                    noBack = true;
+                }else{
                     state = STATE.Free;
                 }
                 break;
@@ -218,6 +225,13 @@ public class platerState : MonoBehaviour
                 break;
             default:
                 break;
+        }
+        if(noBack){
+            horizontalInput = 0;
+            if(canMove){
+                zDirection = 1;
+                runInput = canRunningToAttack;
+            }
         }
         Vector3 direccion = new Vector3(horizontalInput, 0, zDirection);
         direccion = Vector3.ClampMagnitude(direccion, 1);
@@ -257,6 +271,10 @@ public class platerState : MonoBehaviour
         canMove = false;
     }
 
+    public void setRunnigToAttack(){
+        canRunningToAttack = true;
+    }
+
     public void moveFree(){
         if(state == STATE.Roll){
             roll = false;
@@ -264,6 +282,8 @@ public class platerState : MonoBehaviour
             crouched = false;
         }
         canMove = true;
+        noBack = false;
+        canRunningToAttack = false;
         state = STATE.Free;
     }
 
