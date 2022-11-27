@@ -127,6 +127,7 @@ public class platerState : MonoBehaviour
                     moveZ *= 2;
                     moveX *= 2;
                 }
+                if(isJumping) velocity *= 1.6f;
                 controller.Move(move * velocity * Time.deltaTime);
             }
         }
@@ -164,10 +165,10 @@ public class platerState : MonoBehaviour
     void checkForStateChange(){
         bool inJump = Input.GetKey(KeyCode.Space);
         bool inRoll = Input.GetKey(KeyCode.C);
-        bool inAttack = Input.GetMouseButton(0);
+        bool inAttack = Input.GetMouseButtonDown(0);
         bool inCover = Input.GetMouseButton(1);
         bool inCrouched = Input.GetKey(KeyCode.LeftControl);
-        bool attackMagic = Input.GetKeyDown(KeyCode.X);
+        bool interaction = Input.GetKeyDown(KeyCode.X);
         bool inRage = Input.GetKeyDown(KeyCode.Q);
         bool inPower1 = Input.GetKeyDown(KeyCode.Alpha1);
         switch (state)
@@ -190,7 +191,7 @@ public class platerState : MonoBehaviour
                     attack = true;
                     noBack = true;
                     state = STATE.Attack;
-                }else if(attackMagic && !isJumping){
+                }else if(interaction && !isJumping){
                     animator.Play("attack-m-1");
                     state = STATE.Bloqued;
                 }else if(inRage && !isJumping){
@@ -201,6 +202,9 @@ public class platerState : MonoBehaviour
                 }else if(inPower1 && !isJumping){
                     animator.Play("power-1");
                     state = STATE.Bloqued;
+                }
+                if(!inAttack){
+                    attack = false;
                 }
                 break;  
             case STATE.Crouched:
@@ -215,10 +219,8 @@ public class platerState : MonoBehaviour
                 }
                 break;
             case STATE.Attack:
-                attack = inAttack;
-                if(attack){
-                    noBack = true;
-                }
+                if(!attack) attack = inAttack;
+                if(attack) noBack = true;
                 break;
             default:
                 break;
@@ -267,7 +269,7 @@ public class platerState : MonoBehaviour
     {
         isJumping = true;
         velGravity = jumpSpeed;
-        if (runInput && verticalInput > 1) velGravity *= 1.1f;
+        if (runInput && verticalInput > 1) velGravity *= 4f;
         move.y = velGravity;
         controller.Move(new Vector3(0, move.y * Time.deltaTime, 0));
         jump = false;
@@ -278,9 +280,11 @@ public class platerState : MonoBehaviour
         if (controller.isGrounded) velGravity = -gravity;
         else velGravity -= gravity * Time.deltaTime;
         move.y = velGravity;
-        float rotationX = camara.transform.rotation.x;
         controller.Move(new Vector3(0, move.y * Time.deltaTime, 0));
-        camara.transform.rotation = Quaternion.Euler(rotationX, camara.transform.rotation.y, camara.transform.rotation.z);
+    }
+
+    public void resetAttack(){
+        attack = false;
     }
 
     public void blockMove(){

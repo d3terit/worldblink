@@ -48,6 +48,7 @@
      <Compile Include="Assets/myAssets/player/scripts/playerController.cs" />
      <Compile Include="Assets/Ciconia Studio/_Shared Files/Scripts/Demo/FreeCamera.cs" />
      <Compile Include="Assets/myAssets/model/scripts/moveController.cs" />
+     <Compile Include="Assets/myAssets/player/scripts/idleBehaviour.cs" />
      <None Include="Assets/Ciconia Studio/Shaders/Standard Shaders/BuiltIn/CS_Standard (Specular setup) Opaque.shader" />
      <None Include="Assets/Ciconia Studio/Shaders/Standard Shaders/BuiltIn/CS_Standard (Specular setup) Transparent.shader" />
      <None Include="Assets/Ciconia Studio/Shaders/Standard Shaders/BuiltIn/CS_Lite Standard (Specular setup) Transparent.shader" />
