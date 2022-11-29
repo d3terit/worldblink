@@ -39,7 +39,7 @@ public class idleBehaviour : StateMachineBehaviour
     }
 
     private void resetIdleAnimation(){
-        if(isBored && randomAnimation > 0) randomAnimation --; 
+        if(isBored) randomAnimation --; 
         isBored = false;
         idleTime = 0;
     }
