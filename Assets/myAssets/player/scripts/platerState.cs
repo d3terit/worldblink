@@ -40,7 +40,7 @@ public class platerState : MonoBehaviour
     #endregion
 
     #region Variables de rotacion
-    public float velocidadRotacionSuave = 0.2f;
+    private float velocidadRotacionSuave = 0.2f;
     private float rotacionSuave = 0.3f;
     #endregion
 
@@ -302,6 +302,7 @@ public class platerState : MonoBehaviour
         noBack = false;
         canRunningToAttack = false;
         state = STATE.Free;
+        animator.SetFloat("idle", 0);
     }
 
     void setAnimations()
