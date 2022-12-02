@@ -100,7 +100,16 @@ public class enemyController : MonoBehaviour
         float angle = Vector3.Angle(direction, transform.forward);
         float distance = Vector3.Distance(player.position, transform.position);
         playerView = distance <= playerDetectRange || distance <= playerLargeViewRange && angle <= viewAngleRange;
-        state = distance > playerAttackRange ? STATE.move : STATE.attack;
+        switch (state){
+            case STATE.move:
+                if(distance <= playerAttackRange) state = STATE.attack;
+                break;
+            case STATE.attack:
+                if(distance > playerAttackRange + 0.5f) state = STATE.move;
+                break;
+            default:
+                break;
+        }
     }
 
     void setAnimations(){

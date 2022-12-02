@@ -302,7 +302,6 @@ public class platerState : MonoBehaviour
         noBack = false;
         canRunningToAttack = false;
         state = STATE.Free;
-        animator.SetFloat("idle", 0);
     }
 
     void setAnimations()
