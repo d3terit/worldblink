@@ -21,14 +21,21 @@ public class enemyController : MonoBehaviour
     private bool moving = false;
     [SerializeField]
     private float idleTime = 0;
-
-    public LayerMask lGroud, lPlayer;
-
     [SerializeField]
     public bool playerView = false;
     private float normVelocity;
     public float runVelocity = 2f;
     private float currentVelocity;
+    private Vector3 directionToPlayer;
+    private bool canMove = true;
+    private float attackType = -1;
+
+    [Header("Estadisticas")]
+    public float vida = 100;
+    public float damage = 10;
+    public float coldownAttack = 1;
+    private float coldownAttackTime = 0;
+
     void Start(){
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -71,7 +78,7 @@ public class enemyController : MonoBehaviour
             currentVelocity = normVelocity;
             agent.speed = currentVelocity;
         }
-        else{
+        else if(canMove){
             agent.SetDestination(player.position);
             currentVelocity = runVelocity;
             agent.speed = currentVelocity;
@@ -80,6 +87,14 @@ public class enemyController : MonoBehaviour
 
     void attack(){
         agent.SetDestination(transform.position);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(directionToPlayer), 0.5f);
+        if (coldownAttackTime >= coldownAttack){
+            coldownAttackTime = 0;
+            if(attackType == -1) attackType = Random.Range(1, 3);
+        }
+        else{
+            coldownAttackTime += Time.deltaTime;
+        }
     }
 
     Vector3 getRandomPoint(){
@@ -96,13 +111,16 @@ public class enemyController : MonoBehaviour
     }
 
     void changeStates(){
-        Vector3 direction = player.position - transform.position;
-        float angle = Vector3.Angle(direction, transform.forward);
+        directionToPlayer = player.position - transform.position;
+        float angle = Vector3.Angle(directionToPlayer, transform.forward);
         float distance = Vector3.Distance(player.position, transform.position);
         playerView = distance <= playerDetectRange || distance <= playerLargeViewRange && angle <= viewAngleRange;
         switch (state){
             case STATE.move:
-                if(distance <= playerAttackRange) state = STATE.attack;
+                if(distance <= playerAttackRange){
+                    state = STATE.attack;
+                    coldownAttackTime = coldownAttack-0.1f;
+                }
                 break;
             case STATE.attack:
                 if(distance > playerAttackRange + 0.5f) state = STATE.move;
@@ -112,8 +130,19 @@ public class enemyController : MonoBehaviour
         }
     }
 
+    void blockMove(){
+        canMove = false;
+    }
+
+    void unblockMove(){
+        canMove = true;
+        attackType = -1;
+        coldownAttackTime = 0;
+    }
+
     void setAnimations(){
         animator.SetFloat("speed", agent.velocity.magnitude);
+        animator.SetFloat("attack", attackType);
     }
 
 }

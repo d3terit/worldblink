@@ -35,6 +35,14 @@ public class goblingController : MonoBehaviour
     private float currentVelocity;
     private float distanceToPlayer;
     private bool canMove = true;
+    //crear una variable para rotar el gobling en direccion al player
+    private Vector3 directionToPlayer;
+    public float angleToPlayer;
+    public GameObject arrowPrefab;
+    public Transform arrowSpawn;
+    public float arrowSpeed = 10f;
+    public float arrowDamage = 10f;
+    public float arrowLifeTime = 5f;
     void Start(){
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -79,8 +87,7 @@ public class goblingController : MonoBehaviour
         }
         else{
             agent.SetDestination(player.position);
-            if(distanceToPlayer > maxLargeAttackRange) currentVelocity = runVelocity;
-            else currentVelocity = normVelocity;
+            currentVelocity = runVelocity;
             agent.speed = currentVelocity;
         }
     }
@@ -120,6 +127,11 @@ public class goblingController : MonoBehaviour
             animator.SetBool("attackFar", false);
             attackTime += Time.deltaTime;
         }
+        checkRotation();
+    }
+
+    void checkRotation(){
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(directionToPlayer), 0.5f);
     }
 
     Vector3 getRandomPoint(){
@@ -136,10 +148,10 @@ public class goblingController : MonoBehaviour
     }
 
     void changeStates(){
-        Vector3 direction = player.position - transform.position;
-        float angle = Vector3.Angle(direction, transform.forward);
+        directionToPlayer = player.position - transform.position;
+        angleToPlayer = Vector3.Angle(directionToPlayer, transform.forward);
         distanceToPlayer = Vector3.Distance(player.position, transform.position);
-        playerView = distanceToPlayer <= playerDetectRange || distanceToPlayer <= playerLargeViewRange && angle <= viewAngleRange;
+        playerView = distanceToPlayer <= playerDetectRange || distanceToPlayer <= playerLargeViewRange && angleToPlayer <= viewAngleRange;
         switch (state){
             case STATE.move:
                 if((distanceToPlayer <= maxLargeAttackRange-2f && playerView) || distanceToPlayer <= playerDetectRange) state = STATE.attack;
@@ -155,6 +167,16 @@ public class goblingController : MonoBehaviour
             default:
                 break;
         }
+    }
+    void shootArrow(){
+        Vector3 arrowDirection = player.position - transform.position;
+        arrowDirection.y += 115f;
+        Vector3 pos = arrowSpawn.position + new Vector3(-0.5f,0.6f,1.18f);
+        GameObject arrow = Instantiate(arrowPrefab, arrowSpawn.position, Quaternion.LookRotation(arrowDirection));
+        arrow.GetComponent<arrowController>().arrowDamage = arrowDamage;
+        arrow.GetComponent<arrowController>().arrowSpeed = arrowSpeed;
+        arrow.GetComponent<arrowController>().arrowLifeTime = arrowLifeTime;
+        arrow.GetComponent<arrowController>().destination = player.position;
     }
 
     void blockMove(){
