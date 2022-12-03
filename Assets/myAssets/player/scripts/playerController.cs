@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class platerState : MonoBehaviour
+public class playerController : MonoBehaviour
 {
     
     #region Control de cámara

@@ -13,7 +13,7 @@ public class arrowController : MonoBehaviour
     private float randomHeight;
     private bool finish = false;
     void Start() {
-        randomHeight = Random.Range(0f, 1.5f);
+        randomHeight = Random.Range(1f, 2f);
     }
     void Update() {
         lifeTime += Time.deltaTime;
@@ -28,7 +28,7 @@ public class arrowController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag != "Gobling"){
-            if(other.gameObject.tag == "Player") other.gameObject.GetComponent<platerState>().takeDamage(arrowDamage);
+            if(other.gameObject.tag == "Player") other.gameObject.GetComponent<playerController>().takeDamage(arrowDamage);
             transform.parent = other.transform;
             transform.position = other.ClosestPoint(transform.position);
             finish = true;
