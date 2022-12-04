@@ -62,24 +62,37 @@ public class playerController : MonoBehaviour
     public ParticleSystem heal1;
     public ParticleSystem heal2;
     #endregion
-    
+    private statsController stats;
+
+    private bool isDead = false;
+
+    [Header("Ataque")]
+    public GameObject sword;
+    public int damageSword = 10;
+    public int damageKick = 20;
+    public int damageChrounced = 15;
+    public float attackRange = 1.5f;
     
     // Start is called before the first frame update
     void Awake(){
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        stats = GetComponent<statsController>();
     }
 
     void Start(){
         Cursor.lockState = CursorLockMode.Locked;
+        sword.GetComponent<Collider>().enabled = false;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        playerStateMachine();
-        setAnimations();
-        setGravity();
+    void Update(){
+        if(!isDead){
+            playerStateMachine();
+            setAnimations();
+            setGravity();
+            setAttackProperties();
+        }
     }
 
     void playerStateMachine(){
@@ -155,7 +168,11 @@ public class playerController : MonoBehaviour
     }
 
     void deadState(){
-
+        isDead = true;
+        int random = Random.Range(1, 3);
+        if(random == 1) animator.Play("death-1");
+        else animator.Play("death-2");
+        controller.enabled = false;
     }
 
     void bloquedState(){
@@ -304,16 +321,27 @@ public class playerController : MonoBehaviour
         state = STATE.Free;
     }
 
-    public void takeDamage(float damage){
-        Debug.Log("Damage: " + damage);
+    public void takeDamage(int damage){
         if(state != STATE.Dead){
-            // health -= 10;
-            // if(health <= 0){
-            //     isDead = true;
-            //     state = STATE.Dead;
-            //     animator.Play("death");
-            // }
+            stats.health -= damage;
+            if(stats.health <= 0) state = STATE.Dead;
         }
+    }
+
+    public void setAttackProperties(){
+        int damage = damageSword;
+        if(state == STATE.Crouched) damage = damageChrounced;
+        sword.GetComponent<swordController>().damageSword = damage;
+        sword.GetComponent<swordController>().attackRange = attackRange;
+        
+    }
+
+    public void enableSwordCollider(){
+        sword.GetComponent<Collider>().enabled = true;
+    }
+
+    public void disableSwordCollider(){
+        sword.GetComponent<Collider>().enabled = false;
     }
 
     void setAnimations()

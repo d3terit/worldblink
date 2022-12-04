@@ -34,15 +34,18 @@ public class goblingController : MonoBehaviour
     public float runVelocity = 2f;
     private float currentVelocity;
     private float distanceToPlayer;
+    [SerializeField]
     private bool canMove = true;
+    private bool isPlayerDead = false;
     //crear una variable para rotar el gobling en direccion al player
     private Vector3 directionToPlayer;
     public float angleToPlayer;
     public GameObject arrowPrefab;
     public Transform arrowSpawn;
     public float arrowSpeed = 10f;
-    public float arrowDamage = 10f;
+    public int arrowDamage = 10;
     public float arrowLifeTime = 5f;
+    public GameObject arc;
     void Start(){
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -60,6 +63,9 @@ public class goblingController : MonoBehaviour
             case STATE.attack:
                 attack();
                 break;
+            case STATE.dead:
+                dead();
+                break;
             default:
                 break;
         }
@@ -68,7 +74,7 @@ public class goblingController : MonoBehaviour
     }
 
     void moveTo(){
-        if (!playerView){
+        if (!playerView || isPlayerDead){
             if(!moving && idleTime >= maxIdleTime){
                 walkPoint = getRandomPoint();
                 moving = true;
@@ -131,7 +137,14 @@ public class goblingController : MonoBehaviour
     }
 
     void checkRotation(){
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(directionToPlayer), 0.5f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(directionToPlayer), 1f);
+    }
+
+    void dead(){
+        agent.speed = 0;
+        agent.enabled = false;
+        animator.Play("e-g-die");
+        GetComponent<Collider>().enabled = false;
     }
 
     Vector3 getRandomPoint(){
@@ -151,13 +164,14 @@ public class goblingController : MonoBehaviour
         directionToPlayer = player.position - transform.position;
         angleToPlayer = Vector3.Angle(directionToPlayer, transform.forward);
         distanceToPlayer = Vector3.Distance(player.position, transform.position);
+        isPlayerDead = player.GetComponent<playerController>().state == playerController.STATE.Dead;
         playerView = distanceToPlayer <= playerDetectRange || distanceToPlayer <= playerLargeViewRange && angleToPlayer <= viewAngleRange;
         switch (state){
             case STATE.move:
-                if((distanceToPlayer <= maxLargeAttackRange-2f && playerView) || distanceToPlayer <= playerDetectRange) state = STATE.attack;
+                if(((distanceToPlayer <= maxLargeAttackRange-2f && playerView) || distanceToPlayer <= playerDetectRange) && !isPlayerDead) state = STATE.attack;
                 break;
             case STATE.attack:
-                if(distanceToPlayer > maxLargeAttackRange + 0.5f){
+                if((distanceToPlayer > maxLargeAttackRange + 0.5f) || isPlayerDead){
                     state = STATE.move;
                     attackState = ATTACKSTATE.none;
                     animator.SetBool("attackFar", false);
@@ -185,6 +199,14 @@ public class goblingController : MonoBehaviour
 
     void unblockMove(){
         canMove = true;
+    }
+
+
+    public void activateArcCollider(){
+        arc.GetComponent<Collider>().enabled = true;
+    }
+    public void deactivateArcCollider(){
+        arc.GetComponent<Collider>().enabled = false;
     }
 
     void setAnimations(){

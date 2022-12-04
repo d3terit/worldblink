@@ -6,14 +6,14 @@ public class arrowController : MonoBehaviour
 {
     private Rigidbody rb;
     public float arrowSpeed;
-    public float arrowDamage;
+    public int arrowDamage;
     public Vector3 destination;
     public float arrowLifeTime, lifeTime;
     private GameObject collisionOther;
     private float randomHeight;
     private bool finish = false;
     void Start() {
-        randomHeight = Random.Range(1f, 2f);
+        randomHeight = Random.Range(1f, 1.6f);
     }
     void Update() {
         lifeTime += Time.deltaTime;
