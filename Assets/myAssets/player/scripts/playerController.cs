@@ -68,10 +68,13 @@ public class playerController : MonoBehaviour
 
     [Header("Ataque")]
     public GameObject sword;
+    public GameObject shield;
+    public GameObject kick;
     public int damageSword = 10;
     public int damageKick = 20;
     public int damageChrounced = 15;
     public float attackRange = 1.5f;
+    private int currentAttackDamage;
     
     // Start is called before the first frame update
     void Awake(){
@@ -83,6 +86,9 @@ public class playerController : MonoBehaviour
     void Start(){
         Cursor.lockState = CursorLockMode.Locked;
         sword.GetComponent<Collider>().enabled = false;
+        shield.GetComponent<Collider>().enabled = false;
+        kick.GetComponent<Collider>().enabled = false;
+        currentAttackDamage = damageSword;
     }
 
     // Update is called once per frame
@@ -329,11 +335,8 @@ public class playerController : MonoBehaviour
     }
 
     public void setAttackProperties(){
-        int damage = damageSword;
-        if(state == STATE.Crouched) damage = damageChrounced;
-        sword.GetComponent<swordController>().damageSword = damage;
-        sword.GetComponent<swordController>().attackRange = attackRange;
-        
+        sword.GetComponent<AttackController>().damage = currentAttackDamage;
+        sword.GetComponent<AttackController>().attackRange = attackRange;
     }
 
     public void enableSwordCollider(){
@@ -342,6 +345,16 @@ public class playerController : MonoBehaviour
 
     public void disableSwordCollider(){
         sword.GetComponent<Collider>().enabled = false;
+    }
+
+    public void enableKickCollider(){
+        kick.GetComponent<Collider>().enabled = true;
+        currentAttackDamage = damageKick;
+    }
+
+    public void disableKickCollider(){
+        kick.GetComponent<Collider>().enabled = false;
+        currentAttackDamage = damageSword;
     }
 
     void setAnimations()

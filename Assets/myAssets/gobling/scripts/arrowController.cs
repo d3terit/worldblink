@@ -28,12 +28,12 @@ public class arrowController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag != "Gobling"){
-            if(other.gameObject.tag == "Player") other.gameObject.GetComponent<playerController>().takeDamage(arrowDamage);
             transform.parent = other.transform;
             transform.position = other.ClosestPoint(transform.position);
             finish = true;
             GetComponent<Collider>().enabled = false;
             Destroy(gameObject, arrowLifeTime);
+            if(other.gameObject.tag == "Player") other.gameObject.GetComponent<playerController>().takeDamage(arrowDamage);            
         }
     }
 }

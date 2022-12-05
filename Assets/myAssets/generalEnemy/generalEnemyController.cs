@@ -31,6 +31,10 @@ public class generalEnemyController : MonoBehaviour
             GetComponent<goblingController>().state = goblingController.STATE.dead;
             healthBar.gameObject.SetActive(false);
         }
+        else if(GetComponent<warrokController>() != null){
+            GetComponent<warrokController>().state = warrokController.STATE.dead;
+            healthBar.gameObject.SetActive(false);
+        }
         StartCoroutine("destroyEnemy");
     }
 
@@ -38,9 +42,10 @@ public class generalEnemyController : MonoBehaviour
         if(timeToDamage <= 0){
             health -= damage;
             healthBar.value = health;
+            if(health < 0) health = 0;
             healthBar.GetComponentInChildren<TextMeshProUGUI>().text = health.ToString() + " / " + maxHealth.ToString();
             timeToDamage = coldownDamage;
-            if(health <= 0) killEnemy();
+            if(health == 0) killEnemy();
         }
     }
 

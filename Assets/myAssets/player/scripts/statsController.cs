@@ -19,7 +19,7 @@ public class statsController : MonoBehaviour
     public Slider healthSlider;
     public Slider staminaSlider;
     public Slider manaSlider;
-    
+    public GameObject uiGeneral;
     void Start() {
         healthSlider.maxValue = maxHealth;
         healthSlider.value = health;
@@ -31,15 +31,21 @@ public class statsController : MonoBehaviour
 
     void Update() {
         setSliderValues();
+        if(health <=0) StartCoroutine("die");
     }
 
     void setSliderValues(){
         healthSlider.value = health;
         healthSlider.GetComponentInChildren<TextMeshProUGUI>().text = health.ToString() + " / " + maxHealth.ToString();
-        
         staminaSlider.value = stamina;
         staminaSlider.GetComponentInChildren<TextMeshProUGUI>().text = stamina.ToString() + " / " + maxStamina.ToString();
         manaSlider.value = mana;
         manaSlider.GetComponentInChildren<TextMeshProUGUI>().text = mana.ToString() + " / " + maxMana.ToString();
     }
+
+    IEnumerator die(){
+        yield return new WaitForSeconds(1f);
+        uiGeneral.SetActive(false);
+    }
+    
 }
