@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class gameController : MonoBehaviour
 {
@@ -226,5 +227,9 @@ public class gameController : MonoBehaviour
             }
             bestiaryNextPageButton.SetActive(true);
         }
+    }
+    public void goToMainMenu(){
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
     }
 }

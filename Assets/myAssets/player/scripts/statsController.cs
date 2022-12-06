@@ -6,14 +6,14 @@ using TMPro;
 public class statsController : MonoBehaviour
 {
     [Header("Player Stats")]
-    public int health = 350;
-    public int maxHealth = 350;
-    public int armor = 0;
-    public int maxArmor = 100;
-    public int stamina = 100;
-    public int maxStamina = 100;
-    public int mana = 100;
-    public int maxMana = 100;
+    public float health = 350;
+    public float maxHealth = 350;
+    public float armor = 0;
+    public float maxArmor = 100;
+    public float stamina = 100;
+    public float maxStamina = 100;
+    public float mana = 100;
+    public float maxMana = 100;
     public int experience = 0;
     public int maxExperience = 100;
     public int level = 1;
@@ -32,12 +32,12 @@ public class statsController : MonoBehaviour
     public TextMeshProUGUI levelText2;
     private playerController playerController;
     void Start() {
-        healthSlider.maxValue = maxHealth;
-        healthSlider.value = health;
-        staminaSlider.maxValue = maxStamina;
-        staminaSlider.value = stamina;
-        manaSlider.maxValue = maxMana;
-        manaSlider.value = mana;
+        healthSlider.maxValue = (int)(maxHealth);
+        healthSlider.value = (int)(health);
+        staminaSlider.maxValue = (int)(maxStamina);
+        staminaSlider.value = (int)(stamina);
+        manaSlider.maxValue = (int)(maxMana);
+        manaSlider.value = (int)(mana);
         playerController = GetComponent<playerController>();
         experienceSlider.maxValue = maxExperience;
         experienceSlider.value = experience;
@@ -50,15 +50,15 @@ public class statsController : MonoBehaviour
     }
 
     void setSliderValues(){
-        healthSlider.value = health;
-        healthText.text = health.ToString() + " / " + maxHealth.ToString();
-        healthSlider.GetComponentInChildren<TextMeshProUGUI>().text = health.ToString() + " / " + maxHealth.ToString();
-        staminaSlider.value = stamina;
-        staminaText.text = stamina.ToString() + " / " + maxStamina.ToString();
-        staminaSlider.GetComponentInChildren<TextMeshProUGUI>().text = stamina.ToString() + " / " + maxStamina.ToString();
-        manaSlider.value = mana;
-        manaText.text = mana.ToString() + " / " + maxMana.ToString();
-        manaSlider.GetComponentInChildren<TextMeshProUGUI>().text = mana.ToString() + " / " + maxMana.ToString();
+        healthSlider.value = (int)(health);
+        healthText.text = ((int)(health)).ToString() + " / " + ((int)(maxHealth)).ToString();
+        healthSlider.GetComponentInChildren<TextMeshProUGUI>().text = ((int)(health)).ToString() + " / " + ((int)(maxHealth)).ToString();
+        staminaSlider.value = (int)(stamina);
+        staminaText.text = ((int)(stamina)).ToString() + " / " + ((int)(maxStamina)).ToString();
+        staminaSlider.GetComponentInChildren<TextMeshProUGUI>().text = ((int)(stamina)).ToString() + " / " + ((int)(maxStamina)).ToString();
+        manaSlider.value = (int)(mana);
+        manaText.text = ((int)(mana)).ToString() + " / " + ((int)(maxMana)).ToString();
+        manaSlider.GetComponentInChildren<TextMeshProUGUI>().text = ((int)(mana)).ToString() + " / " + ((int)(maxMana)).ToString();
     }
 
     IEnumerator die(){

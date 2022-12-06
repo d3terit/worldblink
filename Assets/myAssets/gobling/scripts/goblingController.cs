@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class goblingController : MonoBehaviour
 {
@@ -46,12 +47,15 @@ public class goblingController : MonoBehaviour
     public int arrowDamage = 10;
     public float arrowLifeTime = 5f;
     public GameObject arc;
+    public AudioClip deathSound;
+    public Slider volumeSlider;
     void Start(){
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         walkPoint = transform.position;
         normVelocity = agent.speed;
+        GetComponent<AudioSource>().volume = volumeSlider.value;
     }
 
     // Update is called once per frame
@@ -217,6 +221,11 @@ public class goblingController : MonoBehaviour
 
     public void killEnemy(){
         state = STATE.dead;
+        GetComponent<AudioSource>().PlayOneShot(deathSound);
         player.GetComponent<statsController>().addExperience(10);
+    }
+
+    public void setVolume(){
+        GetComponent<AudioSource>().volume = volumeSlider.value;
     }
 }

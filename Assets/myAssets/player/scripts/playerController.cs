@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class playerController : MonoBehaviour
 {
     
@@ -82,6 +84,7 @@ public class playerController : MonoBehaviour
     public float intervalResetMana = 8f;
     public float timeToResetMana = 8f;
     public int costPower1 = 70;
+    public int power1Damage = 80;
     public int costJumpAttack = 30;
     public int costRoll = 20;
     public bool canResetStamina = true;
@@ -91,6 +94,8 @@ public class playerController : MonoBehaviour
     public float intervalResetHealth = 5f;
     public float timeToResetHealth = 5f;
     public int resetHealt = 50;
+    public Slider volumeSlider;
+    public AudioClip swordSound, deathSound;
     
     // Start is called before the first frame update
     void Awake(){
@@ -104,6 +109,7 @@ public class playerController : MonoBehaviour
         shield.GetComponent<Collider>().enabled = false;
         kick.GetComponent<Collider>().enabled = false;
         currentAttackDamage = damageSword;
+        GetComponent<AudioSource>().volume = volumeSlider.value;
     }
 
     // Update is called once per frame
@@ -196,6 +202,8 @@ public class playerController : MonoBehaviour
         if(random == 1) animator.Play("death-1");
         else animator.Play("death-2");
         controller.enabled = false;
+        GetComponent<AudioSource>().PlayOneShot(deathSound);
+        StartCoroutine(restartLevel());
     }
 
     void bloquedState(){
@@ -240,6 +248,7 @@ public class playerController : MonoBehaviour
                     state = STATE.Bloqued;
                 }else if(inRage && !isJumping && stats.mana >= costCuration){
                     stats.mana -= costCuration;
+                    stats.health += resetHealt;
                     canResetMana = false;
                     timeToResetMana = intervalResetMana;
                     StartCoroutine(resetMana());
@@ -253,6 +262,7 @@ public class playerController : MonoBehaviour
                     timeToResetMana = intervalResetMana;
                     StartCoroutine(resetMana());
                     animator.Play("power-1");
+                    currentAttackDamage = power1Damage;
                     state = STATE.Bloqued;
                 }
                 if(!inAttack){
@@ -360,6 +370,7 @@ public class playerController : MonoBehaviour
         noBack = false;
         canRunningToAttack = false;
         state = STATE.Free;
+        currentAttackDamage = damageSword;
     }
 
     public void takeDamage(int damage){
@@ -367,7 +378,8 @@ public class playerController : MonoBehaviour
             stats.health -= damage;
             canResetHealth = false;
             timeToResetHealth = intervalResetHealth;
-            if(stats.health <= 0) state = STATE.Dead;
+            StartCoroutine(resetHealth());
+            if(stats.health <= 0f) state = STATE.Dead;
         }
     }
 
@@ -419,10 +431,9 @@ public class playerController : MonoBehaviour
     }
 
     void resetStats(){
-        if(canResetHealth && stats.health < stats.maxHealth-1) stats.health +=  .3f;
-        else if(canResetHealth && stats.health < stats.maxHealth) stats.health += .1f;
-        if(canResetMana && stats.mana < stats.maxMana) stats.mana += .1f;
-        if(canResetStamina && stats.stamina < stats.maxStamina) stats.stamina += 0.1f;
+        if(canResetHealth && Time.timeScale != 0 && stats.health < stats.maxHealth*0.7) stats.health +=  .1f;
+        if(canResetMana && Time.timeScale != 0 && stats.mana < stats.maxMana) stats.mana += .05f;
+        if(canResetStamina && Time.timeScale != 0 && stats.stamina < stats.maxStamina) stats.stamina += 0.1f;
     }
 
     IEnumerator resetHealth(){
@@ -439,5 +450,17 @@ public class playerController : MonoBehaviour
         yield return new WaitForSeconds(timeToResetStamina);
         canResetStamina = true;
     }
+
+    public void playSwordSound(){
+        GetComponent<AudioSource>().PlayOneShot(swordSound);
+    }
     
+    public void changeMusicVolume(){
+        GetComponent<AudioSource>().volume = volumeSlider.value;
+    }
+
+    IEnumerator restartLevel(){
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(0);
+    }
 }

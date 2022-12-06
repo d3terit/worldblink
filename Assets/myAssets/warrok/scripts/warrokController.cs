@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class warrokController : MonoBehaviour
 {
@@ -35,7 +36,9 @@ public class warrokController : MonoBehaviour
     private float coldownAttackTime = 0;
     public GameObject punch;
     private int currentAttackDamage;
-
+    public int experience = 20;
+    public AudioClip deathSound;
+    public Slider volumeSlider;
     void Start(){
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -44,6 +47,7 @@ public class warrokController : MonoBehaviour
         normVelocity = agent.speed;
         currentAttackDamage = damage;
         punch.GetComponent<Collider>().enabled = false;
+        GetComponent<AudioSource>().volume = volumeSlider.value;
     }
 
     // Update is called once per frame
@@ -173,6 +177,11 @@ public class warrokController : MonoBehaviour
 
     public void killEnemy(){
         state = STATE.dead;
-        player.GetComponent<statsController>().addExperience(25);
+        GetComponent<AudioSource>().PlayOneShot(deathSound);
+        player.GetComponent<statsController>().addExperience(experience);
+    }
+
+    public void setVolume(){
+        GetComponent<AudioSource>().volume = volumeSlider.value;
     }
 }
