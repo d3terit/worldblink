@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 600
-  health: 10
+  health: 600
   timeToDie: 20
   healthBar: {fileID: 340870917}
   coldownDamage: 0.5
