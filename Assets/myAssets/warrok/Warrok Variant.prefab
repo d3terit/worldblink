@@ -537,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9f811f9b3cded24808af403e708ab33c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 67.07611
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9f811f9b3cded24808af403e708ab33c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1398,7 +1398,7 @@ MonoBehaviour:
   walkPointRange: 20
   playerLargeViewRange: 12
   playerDetectRange: 5
-  playerAttackRange: 1.8
+  playerAttackRange: 1.7
   viewAngleRange: 120
   maxIdleTime: 10
   idleTime: 0

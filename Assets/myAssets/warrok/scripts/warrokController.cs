@@ -28,6 +28,7 @@ public class warrokController : MonoBehaviour
     private float currentVelocity;
     private Vector3 directionToPlayer;
     private bool canMove = true;
+    private bool isPlayerDead = false;
     private float attackType = -1;
     public int damage = 10;
     public float coldownAttack = 1;
@@ -67,7 +68,7 @@ public class warrokController : MonoBehaviour
     }
 
     void moveTo(){
-        if (!playerView){
+        if (!playerView || isPlayerDead){
             if(!moving && idleTime >= maxIdleTime){
                 walkPoint = getRandomPoint();
                 moving = true;
@@ -130,16 +131,17 @@ public class warrokController : MonoBehaviour
         directionToPlayer = player.position - transform.position;
         float angle = Vector3.Angle(directionToPlayer, transform.forward);
         float distance = Vector3.Distance(player.position, transform.position);
+        isPlayerDead = player.GetComponent<playerController>().state == playerController.STATE.Dead;
         playerView = distance <= playerDetectRange || distance <= playerLargeViewRange && angle <= viewAngleRange;
         switch (state){
             case STATE.move:
-                if(distance <= playerAttackRange){
+                if(distance <= playerAttackRange && !isPlayerDead){
                     state = STATE.attack;
                     coldownAttackTime = coldownAttack-0.1f;
                 }
                 break;
             case STATE.attack:
-                if(distance > playerAttackRange + 0.5f) state = STATE.move;
+                if(distance > playerAttackRange + 0.5f || isPlayerDead) state = STATE.move;
                 break;
             default:
                 break;
@@ -169,4 +171,8 @@ public class warrokController : MonoBehaviour
         animator.SetFloat("attack", attackType);
     }
 
+    public void killEnemy(){
+        state = STATE.dead;
+        player.GetComponent<statsController>().addExperience(25);
+    }
 }

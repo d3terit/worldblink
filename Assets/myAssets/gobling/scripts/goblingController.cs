@@ -215,4 +215,8 @@ public class goblingController : MonoBehaviour
         animator.SetBool("posNear", attackState == ATTACKSTATE.attackNear);
     }
 
+    public void killEnemy(){
+        state = STATE.dead;
+        player.GetComponent<statsController>().addExperience(10);
+    }
 }

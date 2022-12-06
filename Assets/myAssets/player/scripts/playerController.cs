@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 public class playerController : MonoBehaviour
 {
     
@@ -75,6 +76,21 @@ public class playerController : MonoBehaviour
     public int damageChrounced = 15;
     public float attackRange = 1.5f;
     private int currentAttackDamage;
+    public TextMeshProUGUI textDamage;
+    public int costCuration = 60;
+    private bool canResetMana = true;
+    public float intervalResetMana = 8f;
+    public float timeToResetMana = 8f;
+    public int costPower1 = 70;
+    public int costJumpAttack = 30;
+    public int costRoll = 20;
+    public bool canResetStamina = true;
+    public float intervalResetStamina = 6f;
+    public float timeToResetStamina = 6f;
+    private bool canResetHealth = true;
+    public float intervalResetHealth = 5f;
+    public float timeToResetHealth = 5f;
+    public int resetHealt = 50;
     
     // Start is called before the first frame update
     void Awake(){
@@ -84,7 +100,6 @@ public class playerController : MonoBehaviour
     }
 
     void Start(){
-        Cursor.lockState = CursorLockMode.Locked;
         sword.GetComponent<Collider>().enabled = false;
         shield.GetComponent<Collider>().enabled = false;
         kick.GetComponent<Collider>().enabled = false;
@@ -98,6 +113,8 @@ public class playerController : MonoBehaviour
             setAnimations();
             setGravity();
             setAttackProperties();
+            setStats();
+            resetStats();
         }
     }
 
@@ -199,7 +216,11 @@ public class playerController : MonoBehaviour
             case STATE.Free:
                 if(!isJumping && inJump){
                     jump = true;
-                }else if (inRoll){
+                }else if (inRoll && stats.stamina >= costRoll){
+                    stats.stamina -= costRoll;
+                    timeToResetStamina = intervalResetStamina;
+                    canResetStamina = false;
+                    StartCoroutine(resetStamina());
                     roll = true;
                     state = STATE.Roll;
                 }
@@ -217,12 +238,20 @@ public class playerController : MonoBehaviour
                 }else if(interaction && !isJumping){
                     animator.Play("attack-m-1");
                     state = STATE.Bloqued;
-                }else if(inRage && !isJumping){
+                }else if(inRage && !isJumping && stats.mana >= costCuration){
+                    stats.mana -= costCuration;
+                    canResetMana = false;
+                    timeToResetMana = intervalResetMana;
+                    StartCoroutine(resetMana());
                     animator.Play("rage");
                     heal1.Play();
                     heal2.Play();
                     state = STATE.Bloqued;
-                }else if(inPower1 && !isJumping){
+                }else if(inPower1 && !isJumping && stats.mana >= costPower1){
+                    stats.mana -= costPower1;
+                    canResetMana = false;
+                    timeToResetMana = intervalResetMana;
+                    StartCoroutine(resetMana());
                     animator.Play("power-1");
                     state = STATE.Bloqued;
                 }
@@ -296,6 +325,12 @@ public class playerController : MonoBehaviour
         move.y = velGravity;
         controller.Move(new Vector3(0, move.y * Time.deltaTime, 0));
         jump = false;
+        if(state == STATE.Attack){
+            stats.stamina -= costJumpAttack;
+            canResetStamina = false;
+            timeToResetStamina = intervalResetStamina;
+            StartCoroutine(resetStamina());
+        }
     }
 
     public void setGravity()
@@ -330,6 +365,8 @@ public class playerController : MonoBehaviour
     public void takeDamage(int damage){
         if(state != STATE.Dead){
             stats.health -= damage;
+            canResetHealth = false;
+            timeToResetHealth = intervalResetHealth;
             if(stats.health <= 0) state = STATE.Dead;
         }
     }
@@ -369,4 +406,38 @@ public class playerController : MonoBehaviour
         animator.SetFloat("MoveX", moveX);
         animator.SetFloat("MoveZ", moveZ);
     }
+
+    void setStats(){
+        textDamage.text = damageSword.ToString();
+    }
+
+    public void upgradeLevel(){
+        damageSword += 2;
+        damageKick += 2;
+        resetHealt += 2;
+        setStats();
+    }
+
+    void resetStats(){
+        if(canResetHealth && stats.health < stats.maxHealth-1) stats.health +=  .3f;
+        else if(canResetHealth && stats.health < stats.maxHealth) stats.health += .1f;
+        if(canResetMana && stats.mana < stats.maxMana) stats.mana += .1f;
+        if(canResetStamina && stats.stamina < stats.maxStamina) stats.stamina += 0.1f;
+    }
+
+    IEnumerator resetHealth(){
+        yield return new WaitForSeconds(timeToResetHealth);
+        canResetHealth = true;
+    }
+
+    IEnumerator resetMana(){
+        yield return new WaitForSeconds(timeToResetMana);
+        canResetMana = true;
+    }
+
+    IEnumerator resetStamina(){
+        yield return new WaitForSeconds(timeToResetStamina);
+        canResetStamina = true;
+    }
+    
 }

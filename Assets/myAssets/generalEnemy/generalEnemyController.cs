@@ -14,7 +14,7 @@ public class generalEnemyController : MonoBehaviour
     public Slider healthBar;
     public float coldownDamage = .5f;
     public float timeToDamage = 0f;
-
+    
     void Start(){
         healthBar.maxValue = maxHealth;
         healthBar.value = health;
@@ -28,11 +28,11 @@ public class generalEnemyController : MonoBehaviour
     void killEnemy(){
         GetComponent<Collider>().enabled = false;
         if(GetComponent<goblingController>() != null){
-            GetComponent<goblingController>().state = goblingController.STATE.dead;
+            GetComponent<goblingController>().killEnemy();
             healthBar.gameObject.SetActive(false);
         }
         else if(GetComponent<warrokController>() != null){
-            GetComponent<warrokController>().state = warrokController.STATE.dead;
+            GetComponent<warrokController>().killEnemy();
             healthBar.gameObject.SetActive(false);
         }
         StartCoroutine("destroyEnemy");
